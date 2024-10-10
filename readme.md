@@ -25,6 +25,8 @@ The `forEach` loop written for you in `index.ejs` should display the recipes. Re
   - `hx-target` to `main`
   - `hx-swap` set to `innerHTML` (to replace what's _in_ `main`)
   
+**Note**: It might _seem_ helpful to re-use the `/` route handler for when the user clicks the Recipes navbar item, since that route _does_ render the recipes. But that's the route for the _entire_ page, which you do not want in this instance--it's more efficient to just send back the recipes, so only that needs to be re-rendered.
+
 ### Step 3: A Single Recipe View
 
 - Add a route handler for `/recipe/:id` that sends back an EJS file for a single recipe. (You'll have to make this file.)
