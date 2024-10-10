@@ -84,17 +84,7 @@
         </ul>
     </nav>
     <main>
-        <section id="recipes">
-            <h1>Recipe List</h1>
-            <ul>
-                <% recipes.forEach(recipe => { %>
-                    <li class="recipe-item">
-                        <h2><%= recipe.title %></h2>
-                        <p class="total-time">Total Time: <%= recipe.prepTime + recipe.cookingTime %> minutes</p>
-                    </li>
-                <% }); %>
-            </ul>
-        </section>
+      <%- include("recipes", {recipes: recipes}) %>
     </main>
 </body>
 </html>
