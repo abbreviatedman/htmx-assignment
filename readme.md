@@ -32,7 +32,7 @@ The `forEach` loop written for you in `index.ejs` should display the recipes. Re
   - `hx-get` to the right route
   - `hx-target` to `#main`
   - `hx-swap` set to `innerHTML` (to replace what's _in_ `#main`)
-- Your EJS file should display the recipe's name, ingredients, and steps. It should also ideally have a back button to return to the main page, but, if not, the user can click the navbar item.
+- The single-recipe EJS file you make should display the recipe's name, ingredients, and steps. It should also ideally have a back button to return to the main page, but, if not, the user can click the navbar item.
 
 ### Bonus
 
