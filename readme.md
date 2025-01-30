@@ -22,7 +22,7 @@ The `forEach` loop written for you in `index.ejs` should display the recipes. Re
 - Add GET route handlers for `/recipes`, `/about`, `/contact`. They should each send back _only_ the EJS files for those pages.
 - Add HTMX to the front end to load those pages in place when the navbar items are clicked--so put the `hx-` attributes on the correct navbar items. You'll need:
   - `hx-get` to the right route
-  - `hx-target` to `main`
+  - `hx-target` set to `main`
   - `hx-swap` set to `innerHTML` (to replace what's _in_ `main`)
   
 **Note**: It might _seem_ helpful to re-use the `/` route handler for when the user clicks the Recipes navbar item, since that route _does_ render the recipes. But that's the route for the _entire_ page, which you do not want in this instance--it's more efficient to just send back the recipes, so only that needs to be re-rendered.
@@ -47,4 +47,4 @@ For the below, remember to update in place using HTMX, _not_ sending the user to
 
 When doing so, don't forget that the ingredients and steps properties are arrays. You can take them in as a comma-separated list in an input box and convert to an array. `array.join` and `string.split` are helpful here!
 
-- For adding and editing recipes, give the user separate input boxes for each ingredient/step. We recommend a button at the bottom that adds a new input box.
+For adding and editing recipes, give the user separate input boxes for each ingredient/step. We recommend a button at the bottom that adds a new input box.
