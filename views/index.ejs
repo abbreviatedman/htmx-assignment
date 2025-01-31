@@ -98,16 +98,36 @@
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <h1>Noble Desktop Recipe App</h1>
-        <ul>
-	  <li><a>Recipes</a></li>
-	  <li><a>About</a></li>
-	  <li><a>Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-      <%- include("recipes", {recipes: recipes}) %>
-    </main>
+  <nav class="navbar">
+    <h1>Noble Desktop Recipe App</h1>
+    <ul>
+      <li>
+	<a
+	  href="/recipes"
+	>
+	  Recipes
+	</a>
+      </li>
+
+      <li>
+	<a
+	  href="/about"
+	>
+	  About
+	<a>
+      </li>
+
+      <li>
+	<a
+	  href="/contact"
+	>
+	  Contact
+	</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <%- include("recipes", {recipes: recipes}) %>
+  </main>
 </body>
 </html>
